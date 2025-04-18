@@ -13,6 +13,7 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICENSE"]
+dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/michaelhankin/priorityq"
@@ -21,3 +22,8 @@ Issues = "https://github.com/michaelhankin/priorityq/issues"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+]
